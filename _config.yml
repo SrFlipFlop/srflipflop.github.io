@@ -8,25 +8,16 @@ url: "https://srflipflop.github.io"
 
 # Comment
 comment:
-    disqus: leopard
+    disqus: srflipflop
 
 # Social
 social:
-    weibo: 5366874726 
     github: SrFlipFlop
     twitter: SrFlipFlop
     mail: test@test.com
 
-baidu:
-    id: 8ba1c6be0953b6f9c2ba38e57f615421  
-
-# Google Analytics
-#ga:
-#    id:
-#    host:
-
-
 permalink: /:year/:month/:title/
+
 # Format
 highlighter: rouge
 
