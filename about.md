@@ -6,6 +6,3 @@ title: Title About
 <p> 
 
 About
-
-{% include comments.html %}
-
