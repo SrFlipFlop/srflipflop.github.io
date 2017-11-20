@@ -5,7 +5,7 @@
     <div class="panel-main__content">
 
         <div class="ih-item circle effect right_to_left">            
-            <a href="/#blog" title="{{ site.title }}" class="blog-button">
+            <a href="/" title="{{ site.title }}" class="blog-button">
                 <div class="img"><img src="/images/neko.gif" alt="img"></div>
                 <div class="info">
                     <div class="info-back">
@@ -17,14 +17,14 @@
                         <p>
                            {% if site.avatarDesc %}
                                 {{site.avatarDesc}}
-                            {% endif %}
+                           {% endif %}
                         </p>
                     </div>
                 </div>
             </a>
         </div>
 
-        <h1 class="panel-cover__title panel-title"><a href="/#blog" title="link to homepage for {{ site.title }}" class="blog-button">{{ site.title }}</a></h1>
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for {{ site.title }}" class="blog-button">{{ site.title }}</a></h1>
         {% if site.subtitle %}
         <span class="panel-cover__subtitle panel-subtitle">{{site.subtitle}}</span>
         {% endif %}
