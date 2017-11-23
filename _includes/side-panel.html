@@ -26,14 +26,14 @@
 
         <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for {{ site.title }}" class="blog-button">{{ site.title }}</a></h1>
         {% if site.subtitle %}
-        <span class="panel-cover__subtitle panel-subtitle">{{site.subtitle}}</span>
+            <span class="panel-cover__subtitle panel-subtitle">{{site.subtitle}}</span>
         {% endif %}
         <hr class="panel-cover__divider" />
         <p class="panel-cover__description">{{ site.description }}</p>
         <hr class="panel-cover__divider panel-cover__divider--secondary" />
         
         {% if site.welcome_message %}
-        <p class="panel-cover__description">{{ site.welcome_message }}</p>
+            <p class="panel-cover__description">{{ site.welcome_message }}</p>
         {% endif %}
         
 
@@ -42,7 +42,7 @@
             <nav class="cover-navigation cover-navigation--primary">
               <ul class="navigation">
                 {% for item in site.nav %}
-                  <li class="navigation__item"><h1><a href="{{item.url}}" title="{{item.description}}">{{item.title}}</a></h1></li>
+                  <li class="navigation__item"><h2><a href="{{item.url}}" title="{{item.description}}">{{item.title}}</a></h2></li>
                 {% endfor %}
               </ul>
             </nav>
@@ -55,9 +55,9 @@
     </div>
     
     {% if site.cover_color %}
-    <div class="panel-cover--overlay cover-{{site.cover_color}}"></div>
+        <div class="panel-cover--overlay cover-{{site.cover_color}}"></div>
     {% else %}
-    <div class="panel-cover--overlay cover-disabled"></div>
+        <div class="panel-cover--overlay cover-disabled"></div>
     {% endif %}
   </div>
 </header>
