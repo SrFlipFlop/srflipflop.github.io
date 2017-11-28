@@ -19,3 +19,5 @@ The content you'll see here is the realization of my unlimited TODO list. Some e
 >* Crackmes that I use to learn reversing in different architectures.
 >* Maybe analyze Android malware.
 >* Other crazy stuff related to IoT, hardware hacking, AI, robotics / domotics, ...
+
+Basically I will try to put in this blog all the new things that I want to learn, and I hope it will serve to solve some doubts to other people or gain the motivation to start new projects.
