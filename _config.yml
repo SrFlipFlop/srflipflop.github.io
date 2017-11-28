@@ -1,7 +1,7 @@
 # Basic
 title: SrFlipFlop
 subtitle: Ferran Obiols
-description: This blog ... 
+description: Currently working as a security consultant. Trying to learn everything I can relate to computers security and development in my free time 
 avatarTitle: Avatar title
 avatarDesc: Avatar desc
 url: "https://srflipflop.github.io"
@@ -26,9 +26,6 @@ textColor: #FF0000
 # supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
 cover_color: clear
 
-blog_button:
-    title: Blog button
-
 # Navigation buttons in the front page.s
 nav:
     - {title: Archive, description: archive, url: '/archive'}
@@ -37,7 +34,7 @@ nav:
 
 # Pagination
 gems: [jekyll-paginate,jekyll-sitemap]
-paginate: 20
+paginate: 10
 paginate_path: "page/:num/"
 
 
