@@ -1170,9 +1170,6 @@ input[type="tel"]:-ms-input-placeholder {
   }
  }
 
-
-/*头像效果-start*/
-
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
@@ -1365,9 +1362,7 @@ body {
     font-size: 0.9em;
   }
 }
-/*头像效果-end*/
 
-/*导航按钮-start*/
 nav a {
   position: relative;
   display: inline-block;
@@ -1425,4 +1420,23 @@ nav a {
   -moz-transform: translateY(-3px);
   transform: translateY(-3px);
 }
-/*导航按钮-end*/
+
+.node {
+  cursor: pointer;
+}
+
+.node circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 3px;
+}
+
+.node text {
+  font: 12px sans-serif;
+}
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 2px;
+}
