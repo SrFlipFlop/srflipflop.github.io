@@ -32,7 +32,6 @@ nav:
     - {title: Tags, description: tags, url: '/tags'}
     - {title: About, description: about, url: '/about'}
     - {title: TODO, description: todo, url: '/TODO'}
-    - {title: Tools, description: tools, url: '/tools'}
 
 # Pagination
 gems: [jekyll-paginate,jekyll-sitemap]
