@@ -1,33 +1,38 @@
 ---
 layout: page
 title: Tools
+header: Tools header
+group: navigation
 ---
 
 <script src="/js/d3.v3.min.js"></script>
-	
 <script>
 var treeData = [
   {
-    "name": "Top Level",
+    "name": "Tools",
     "parent": "null",
     "children": [
       {
-        "name": "Level 2: A",
-        "parent": "Top Level",
+        "name": "Linux",
+        "parent": "Tools",
         "children": [
           {
-            "name": "Son of A",
-            "parent": "Level 2: A"
+            "name": "Information gathering",
+            "parent": "Linux"
           },
           {
-            "name": "Daughter of A",
-            "parent": "Level 2: A"
+            "name": "Vulnerability discovery",
+            "parent": "Linux"
           }
         ]
       },
       {
-        "name": "Level 2: B",
-        "parent": "Top Level"
+        "name": "Windows",
+        "parent": "Tools"
+      },
+      {
+        "name": "Android",
+        "parent": "Tools"
       }
     ]
   }
