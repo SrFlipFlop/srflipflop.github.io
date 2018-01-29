@@ -1,9 +1,10 @@
 ---
 layout: page
-title: TODO
+title: TODO list
 ---
 <br>
-### TODO list
+### Pentest
 
-- [X] Done
-- [] Todo
+- Vulnerable Machines (Vulnhub, HackTheBox, ...)
+- Certifications Offensive Security (OSCP, OSCE)
+- Mobile certifications
