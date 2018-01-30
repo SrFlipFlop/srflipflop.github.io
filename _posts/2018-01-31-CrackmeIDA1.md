@@ -8,11 +8,11 @@ tag: Reversing
 
 I was searching some blogs or tutorials to practice reversing with IDA and remember some knowledges of assembler (especially x32 / x64 and ARM). A colleague of work recommended me to start with the new Ricardo Narvaja tutorials “Introducción al reversing con IDA Pro desde cero”. The tutorials contain different crackmes to practice the learned knowledges that I will try to solve this problems and write the solving process.
 
-This crackme can be found at X chapter. To solve it, first I will do a static analysis to understand how it works and then patch the code.
+This crackme can be found at the first chapter. To solve it, first I will do a static analysis to understand how it works and then patch the code.
 
 ### Hunting the first clue
 
-This crackme can be found at X chapter. To solve it, first I will do a static analysis to understand how it works and then patch the code.
+This crackme can be found at the first chapter. To solve it, first I will do a static analysis to understand how it works and then patch the code.
 ![](/images/posts/IdaCrackme1/img1.png "Trying some credentials")
 
 ![](/images/posts/IdaCrackme1/img2.png "Wrong credentials error message")
@@ -86,8 +86,4 @@ To bypass this problem it’s only necessary to bypass the last check of EAX and
 This solution can fail if is used a input name that have numbers or characters (remember that the **check\_1** function examine if the string contains uppercase letters). It is possible to bypass this control by using the **NOP** instruction and don’t let the execution arrive in the wrong code. Remember that this patch needs two **NOP** instructions to fill the **JNZ** instruction.
 ![](/images/posts/IdaCrackme1/img12.png "Patch second function")
 
-![](/images/posts/IdaCrackme1/img13.png "Modify ")
-
-![](/images/posts/IdaCrackme1/img14.png "Done")
-
-![](/images/posts/IdaCrackme1/img15.png "Done")
+![](/images/posts/IdaCrackme1/img13.png "Done ")
