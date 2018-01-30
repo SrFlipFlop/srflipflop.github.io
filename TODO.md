@@ -44,5 +44,3 @@ title: TODO list
 - Learn basics
 - Apply some intelligence in a cleaning robot
 - Some computer vision techniques on a drone
-
-### Books
