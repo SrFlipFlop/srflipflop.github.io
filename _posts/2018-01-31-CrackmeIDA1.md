@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Introduction to reversing with IDA: crackme 1"
-date: 2018-01-15 
+date: 2018-01-31 
 description: "Writeup of the first crackme with IDA Pro"
 tag: Reversing
 ---
