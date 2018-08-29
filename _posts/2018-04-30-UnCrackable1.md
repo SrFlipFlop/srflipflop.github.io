@@ -3,10 +3,10 @@ layout: post
 title: "UnCrackable1"
 date: 2018-04-30 
 description: "Writeup of OWASP UnCrackable 1"
-tag: CTF
+tag: Reversing
 ---   
 
-TODO: intro
+OWASP has created three challenges to practice reversing and evasion techniques for security controls. Each challenge adds a bit of difficulty in the security mechanisms and in reverse engineering techniques. In this first challenge ...
 
 ### Information gathering
 
