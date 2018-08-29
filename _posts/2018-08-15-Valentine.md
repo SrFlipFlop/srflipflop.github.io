@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "HackTheBox Valentine"
-date: 2018-05-31 
+date: 2018-08-15 
 description: "Writeup of Valentine HackTheBox machine"
 tag: CTF
 ---   
