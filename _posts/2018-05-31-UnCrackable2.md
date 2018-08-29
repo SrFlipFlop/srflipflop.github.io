@@ -42,3 +42,24 @@ TODO: intro
 
 ### Hardcore
 
+![](/images/posts/UnCrackable2/img14.png "TBC")
+
+![](/images/posts/UnCrackable2/img15.png "TBC")
+
+![](/images/posts/UnCrackable2/img16.png "TBC")
+
+![](/images/posts/UnCrackable2/img17.png "TBC")
+
+![](/images/posts/UnCrackable2/img18.png "TBC")
+
+![](/images/posts/UnCrackable2/img19.png "TBC")
+
+![](/images/posts/UnCrackable2/img20.png "TBC")
+
+![](/images/posts/UnCrackable2/img21.png "TBC")
+
+![](/images/posts/UnCrackable2/img22.png "TBC")
+
+![](/images/posts/UnCrackable2/img23.png "TBC")
+
+![](/images/posts/UnCrackable2/img24.png "TBC")
