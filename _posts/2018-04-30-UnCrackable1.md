@@ -6,7 +6,7 @@ description: "Writeup of OWASP UnCrackable 1"
 tag: Reversing
 ---   
 
-OWASP has created three challenges to practice reversing and evasion techniques for security controls. Each challenge adds a bit of difficulty in the security mechanisms and in reverse engineering techniques. In this first challenge ...
+OWASP has created three challenges to practice reversing and evasion techniques for security controls. Each challenge adds a bit of difficulty in the security mechanisms and in reverse engineering techniques. In this first challenge we will have to bypass a root verification and some reversing to extract the secret.
 
 ### Information gathering
 
