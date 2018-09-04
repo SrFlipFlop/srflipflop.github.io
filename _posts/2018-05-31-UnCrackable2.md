@@ -22,7 +22,7 @@ This second APK contains more Java code and also have a suspicious native librar
 
 In this this challenge we will read the application code first to understand how it works and when uses the native library and then create the Frida hooks to bypass the security mechanisms.
 
-The first function that we will analize is *onCreate* from the main activity. This method is the first executed according to [Android activity lifecycle](https://developer.android.com/reference/android/app/Activity#activity-lifecycle) and normaly calls the security methods.
+The first function that we will analize is *onCreate* from the main activity. This method is the first executed according to [Android activity lifecycle](https://developer.android.com/reference/android/app/Activity#activity-lifecycle) and normaly call the security methods.
 
 ![](/images/posts/UnCrackable2/img3.png "TBC")
 
