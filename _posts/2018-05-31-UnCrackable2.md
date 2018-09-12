@@ -24,12 +24,19 @@ In this this challenge we will read the application code first to understand how
 
 The first function that we will analize is *onCreate* from the main activity. This method is the first executed according to [Android activity lifecycle](https://developer.android.com/reference/android/app/Activity#activity-lifecycle) and normaly it calldd the security methods.
 
+At the beginning of the *onCreate* function it is checked if the device is rooted, in the case that is true the *a* function is called. It is also checked if the application is being debugged.
 
-![](/images/posts/UnCrackable2/img3.png "TBC")
+![](/images/posts/UnCrackable2/img3.png "onCreate function")
 
-![](/images/posts/UnCrackable2/img4.png "TBC")
+The *a* method (that aperars on the *onCreate*) creates the error message using the the string parameter and then call *System.exit* once the user click the OK button.
 
-![](/images/posts/UnCrackable2/img5.png "TBC")
+![](/images/posts/UnCrackable2/img4.png "a method")
+
+The *verify* function  
+
+![](/images/posts/UnCrackable2/img5.png "verify function")
+
+TODO: new image from native call methods
 
 ![](/images/posts/UnCrackable2/img6.png "TBC")
 
