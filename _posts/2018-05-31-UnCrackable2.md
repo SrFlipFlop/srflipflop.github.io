@@ -32,37 +32,53 @@ The *a* method (that aperars on the *onCreate*) creates the error message using 
 
 ![](/images/posts/UnCrackable2/img4.png "a method")
 
-The *verify* function  
+The *verify* function is in charge of calling the *a* method from *CodeCheck* class and create the dialog that will show the verification message.
 
 ![](/images/posts/UnCrackable2/img5.png "verify function")
 
-TODO: new image from native call methods
+*CodeCheck* class is an interface for the native library that calls the native method *bar* to check the user string.
 
-![](/images/posts/UnCrackable2/img6.png "TBC")
+![](/images/posts/UnCrackable2/img6.png "CodeCheck class")
 
 ### Hooking with Frida
 
-![](/images/posts/UnCrackable2/img6.png "TBC")
+Now that we know how the application works, it's time to get your hands dirty and start using **Frida** to bypass the root control.
 
-![](/images/posts/UnCrackable2/img7.png "TBC")
+![](/images/posts/UnCrackable2/img7.png "Root detected message")
 
-![](/images/posts/UnCrackable2/img8.png "TBC")
+We saw in the static code analysis that the application use *System.exit* to kill the application when this detects that the device is rooted. With the following hook the *exit* function is overwritten and it will only send a log message when is called.
 
-![](/images/posts/UnCrackable2/img9.png "TBC")
+![](/images/posts/UnCrackable2/img8.png "Frida JavaScript hook")
 
-![](/images/posts/UnCrackable2/img10.png "TBC")
+![](/images/posts/UnCrackable2/img9.png "Application in a rooted device")
 
-![](/images/posts/UnCrackable2/img11.png "TBC")
+We also know that the *verify* method and the *CodeCheck* class are the responsible to send the string to the native code and receive the check response. With **Frida** we can also follow the execution flow when a user whant to verify the password.
 
-![](/images/posts/UnCrackable2/img12.png "TBC")
+![](/images/posts/UnCrackable2/img10.png "Execution flow")
 
-![](/images/posts/UnCrackable2/img13.png "TBC")
+With the previous hooks we can see the execution flow, but what happens if we modify the Java function and return always true?
 
-### Bonus clip 1
+![](/images/posts/UnCrackable2/img11.png "Frida hooks")
 
-![](/images/posts/UnCrackable2/img14.png "TBC")
+![](/images/posts/UnCrackable2/img12.png "Application always return true")
 
-![](/images/posts/UnCrackable2/img15.png "TBC")
+### Bonus clip 1: hooking native functions
+
+We just hook the Java functions to bypass the secret check, but with **Frida** it is also possible to hook the functions from the native library.
+
+According to the Android NDK documentation ([Android NDK example](https://developer.android.com/ndk/samples/sample_hellojni)), the native functions names have to match with a patter and the Java method name. Using *strings* we can list the native functions names and some other methods used.
+
+![](/images/posts/UnCrackable2/img13.png "library strings")
+
+With **Frida** we can search for a native method and attach a hook that can interact before and after the function is called. With this hook we can modify, like in the Java code, the return value from the native function.
+
+![](/images/posts/UnCrackable2/img14.png "Frida native hook")
+
+![](/images/posts/UnCrackable2/img15.png "Bypass hooking the native function")
+
+### Bonus clip 2: extract the secret dynamically
+
+At this point we still don't know the correct secret ...
 
 ![](/images/posts/UnCrackable2/img16.png "TBC")
 
@@ -76,8 +92,8 @@ TODO: new image from native call methods
 
 ![](/images/posts/UnCrackable2/img21.png "TBC")
 
+### Bonus clip 3: extract the secret statically
+
 ![](/images/posts/UnCrackable2/img22.png "TBC")
 
 ![](/images/posts/UnCrackable2/img23.png "TBC")
-
-![](/images/posts/UnCrackable2/img24.png "TBC")
