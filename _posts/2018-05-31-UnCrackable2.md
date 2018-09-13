@@ -78,22 +78,32 @@ With **Frida** we can search for a native method and attach a hook that can inte
 
 ### Bonus clip 2: extract the secret dynamically
 
-At this point we still don't know the correct secret ...
+At this point we still don't know the correct secret that will surely be at the native library protected with some cryptographic algorithm. The following graph is the disassembly of the verification function.
 
-![](/images/posts/UnCrackable2/img16.png "TBC")
+![](/images/posts/UnCrackable2/img16.png "bar function graph")
 
-![](/images/posts/UnCrackable2/img17.png "TBC")
+The first block we can see that it does some kind of cryptographic protection using **xor** function. Then it checks if the resulting string have 23 characters (17 in hexadecimal).
 
-![](/images/posts/UnCrackable2/img18.png "TBC")
+![](/images/posts/UnCrackable2/img17.png "Cryptographic block")
 
-![](/images/posts/UnCrackable2/img19.png "TBC")
+Once the string is in clear text, the native function uses *strncmp* to check if the strings are equal. Then puts 0 or 1 in the EAX register to return the true or false.
 
-![](/images/posts/UnCrackable2/img20.png "TBC")
+![](/images/posts/UnCrackable2/img18.png "Comparison block")
 
-![](/images/posts/UnCrackable2/img21.png "TBC")
+Knowing that is used *strncmp* to check if the strings are equal, we can hook this function using **Frida** and read the incoming parameters. First we need to enumerate the *libfoo* imports to know the *strncmp* address. Then we can attach a hook to the address and read the parameters (to only print our string we can specify that the string length is 23).
+
+![](/images/posts/UnCrackable2/img19.png "Frida hooks for strncmp")
+
+Now we can see at the terminal the first time using a dummy string the comparison is false, but we discover that the secret is *thanks for all the fish*. The second time using the correct string all the checks return the correct answer.
+
+![](/images/posts/UnCrackable2/img20.png "Correct string discover")
 
 ### Bonus clip 3: extract the secret statically
 
-![](/images/posts/UnCrackable2/img22.png "TBC")
+Another way to extract the string is reverse engineering the cryptographic block and simulate the same behavior with another language. First we need to find the key and the ciphertext in the library.
 
-![](/images/posts/UnCrackable2/img23.png "TBC")
+![](/images/posts/UnCrackable2/img21.png "Key and ciphertext")
+
+Once we have the two values, we can use python to replicate the same algorithm and extract the information.
+
+![](/images/posts/UnCrackable2/img22.png "Python script")
