@@ -38,6 +38,8 @@ The second file is an SSH key in hexadecimal format, but we don't know the users
 
 ![](/images/posts/Valentine/img9.png "RSA key")
 
+### Information leakage using Heartbleed
+
 The secret clue in the web image, is the heart at the right that is the logo of Heartbleed. This vulnerability consist in sending a crafte packet used in the SSL protocol, then the server will respond with random information from the memory. Our goal is to caputre some sensitive information that allow us to enter in the machine.
 
 ![](/images/posts/Valentine/img10.png "Heartbleed explotation")
@@ -52,9 +54,11 @@ With a lot of patience and luck, finally we obtained the first shell using the S
 
 ![](/images/posts/Valentine/img13.png "SSH connection")
 
+### Different privilege escalation
+
 > Note: These machine have different ways to elevate privileges, but probably the author patched the DirtyCow exploitation and now is only possible the path that he designed. This way of elevate privileges is more interesing than a simple exploit.
 
-Once we have the shell and discardted the elevation with some OS exploit, it's time to enumerate some files to find another path for the privilege escalation. With **find** tool we find the *dev_sess* file in */.dev/* directory wich our user have read and write privileges. 
+Once we have the shell and discardted the elevation with some OS exploit, it's time to enumerate some files to find another path for the privilege escalation. With **find** tool we find the *dev_sess* file in */.dev/* directory wich our user have read and write privileges.
 
 ![](/images/posts/Valentine/img14.png "Search files")
 
