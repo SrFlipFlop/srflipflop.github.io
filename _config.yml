@@ -2,8 +2,8 @@
 title: SrFlipFlop
 subtitle: Ferran Obiols
 description: Currently working as a security consultant. Trying to learn everything I can relate to computers security and development in my free time 
-avatarTitle: Avatar title
-avatarDesc: Avatar desc
+avatarTitle: Nope
+avatarDesc: Nope
 url: "https://srflipflop.github.io"
 
 # Comment
@@ -14,7 +14,7 @@ comment:
 social:
     github: SrFlipFlop
     twitter: SrFlipFlop
-    mail: test@test.com
+    mail: ferran.obiols.colomina@gmail.com
 
 permalink: /:year/:month/:title/
 
