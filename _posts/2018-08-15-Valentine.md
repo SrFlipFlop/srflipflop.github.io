@@ -6,7 +6,7 @@ description: "Writeup of Valentine HackTheBox machine"
 tag: CTF
 ---   
 
-Spoiler: in this second Hack the Box machine we will have to use (in my opinion) the first ...
+Spoiler: in this second Hack the Box machine we will have to use a famous old vulnerability that allows us to extract sensitive information and elevate privileges playing with UNIX sockets.
 
 ### Information gathering
 
