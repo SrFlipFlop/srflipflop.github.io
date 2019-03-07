@@ -10,44 +10,44 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut efficitur n
 
 ### Information gathering
 
-![](/images/posts/Kioptrix1and2/img1.png "TBC")
+![](/images/posts/Kioptrix1and2/img1.png "nmap results")
 
-![](/images/posts/Kioptrix1and2/img2.png "TBC")
+![](/images/posts/Kioptrix1and2/img2.png "nikto results")
 
-![](/images/posts/Kioptrix1and2/img3.png "TBC")
+![](/images/posts/Kioptrix1and2/img3.png "search mod_ssl exploits")
 
-![](/images/posts/Kioptrix1and2/img4.png "TBC")
+![](/images/posts/Kioptrix1and2/img4.png "Compile exploit")
 
-![](/images/posts/Kioptrix1and2/img5.png "TBC")
+![](/images/posts/Kioptrix1and2/img5.png "Search RedHat version")
 
-![](/images/posts/Kioptrix1and2/img6.png "TBC")
-
-![](/images/posts/Kioptrix1and2/img7.png "TBC")
+![](/images/posts/Kioptrix1and2/img6.png "Launch the exploit")
 
 ### Information gathering
 
-![](/images/posts/Kioptrix1and2/img8.png "TBC")
+![](/images/posts/Kioptrix1and2/img7.png "nmap results")
 
-![](/images/posts/Kioptrix1and2/img9.png "TBC")
+![](/images/posts/Kioptrix1and2/img8.png "nikto results")
 
-![](/images/posts/Kioptrix1and2/img10.png "TBC")
+![](/images/posts/Kioptrix1and2/img9.png "Login web page")
 
-![](/images/posts/Kioptrix1and2/img11.png "TBC")
+![](/images/posts/Kioptrix1and2/img10.png "Login attempt using common credentials")
 
-![](/images/posts/Kioptrix1and2/img12.png "TBC")
+![](/images/posts/Kioptrix1and2/img11.png "SQL injection in the password field")
 
-![](/images/posts/Kioptrix1and2/img13.png "TBC")
+![](/images/posts/Kioptrix1and2/img12.png "Administratvie console")
 
-![](/images/posts/Kioptrix1and2/img14.png "TBC")
+![](/images/posts/Kioptrix1and2/img13.png "ping functionality")
 
-![](/images/posts/Kioptrix1and2/img15.png "TBC")
+![](/images/posts/Kioptrix1and2/img14.png "Executing commands")
 
-![](/images/posts/Kioptrix1and2/img16.png "TBC")
+![](/images/posts/Kioptrix1and2/img15.png "Obtaining reverse shell")
 
-![](/images/posts/Kioptrix1and2/img17.png "TBC")
+### Elevating privileges
 
-![](/images/posts/Kioptrix1and2/img18.png "TBC")
+![](/images/posts/Kioptrix1and2/img16.png "Information gathering")
 
-![](/images/posts/Kioptrix1and2/img19.png "TBC")
+![](/images/posts/Kioptrix1and2/img17.png "Searching exploits for CentOS version")
 
-![](/images/posts/Kioptrix1and2/img20.png "TBC")
+![](/images/posts/Kioptrix1and2/img18.png "Transfer the exploit code")
+
+![](/images/posts/Kioptrix1and2/img19.png "Executing the exploit")
