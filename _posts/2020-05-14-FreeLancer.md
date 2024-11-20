@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HackTheBox Traceback"
+title: "HackTheBox FreeLancer"
 date: 2020-05-14
 description: "Writeup of FreeLancer HackTheBox CTF"
 tag: CTF
