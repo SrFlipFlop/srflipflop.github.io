@@ -103,6 +103,6 @@ Perfect, now we have the content of the key **backd00r$Mus$tAlw4ysBeF0rb1dd3n$$[
 
 ### Bonus clip
 
-As an alternative way to obtain the key, it would be to extract the key inside the code (the variables that we have discussed in the static analysis of the decompilation). With *Python* we can reverse the process and obtain the dynamic key.
+As an alternative way to obtain the secret, we could extract the key inside the code (the variables that we have discussed in the static analysis of the decompilation). With *Python* we can reverse the process and obtain the dynamic key.
 
 ![](/images/posts/CyberTruck19/img21.png "Python decrypt")
